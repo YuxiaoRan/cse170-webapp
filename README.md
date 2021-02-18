@@ -1,5 +1,5 @@
-#### CSE170/COGS120 WebApp
+## CSE 170 / COGS 120 WebApp
 
-## Yuxiao Sean Ran
+#### Yuxiao Sean Ran
 
-## Jessica Gazca
+#### Jessica Gazca
