@@ -1,0 +1,19 @@
+{
+    "boards": [
+        {
+            "user": "Sean Ran",
+            "restaurant-name": "Pizza Hut",
+            "comment": "I like this restaurant!"
+        },
+        {
+            "user": "Jessica Gazca",
+            "restaurant-name": "The Taco Stand",
+            "comment": "I like this restaurant!"
+        },
+        {
+            "user": "Roseanne Park",
+            "restaurant-name": "Pizza Hut",
+            "comment": "I like this restaurant!"
+        }
+    ]
+}

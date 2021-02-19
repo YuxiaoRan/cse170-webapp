@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>Order History</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/restaurantGo.css" rel="stylesheet">
+
+  	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/restaurantGo.js"></script>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <a class="btn back-btn" href="/">Back</a>
+        <a class="btn nav-bar-btn">My Account</a>
+    </div>
+
+    <div class="container">
+        {{#each orders}}
+        <div class="order" id="order1">
+            <div class="order-item">
+                <div class="details">
+                    <button class="btn order-detail-btn">>></button>
+                </div>
+                <div class="cost">{{cost}}</div>
+                <div class="restaurant-name">{{restaurant-name}}</div>
+                <div class="date">{{date}}</div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+</body>
+</html>

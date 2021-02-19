@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>Sharing Board</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/restaurantGo.css" rel="stylesheet">
+
+  	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/restaurantGo.js"></script>
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <a class="btn back-btn" href="/">Back</a>
+        <a class="btn nav-bar-btn">My Account</a>
+    </div>
+
+    <div class="container">
+        {{#each boards}}
+        <div class="board-containder">
+            <div class="board-restaurant-name">{{restaurant-name}}</div>
+            <div class="username">{{user}}</div>
+            <div class="comment">{{comment}}</div>
+            <image class="board-image" src="../images/liveKitchenPlay.png"></image>
+            <hr></hr>
+        </div>
+        {{/each}}
+    </div>
+
+</body>
+</html>

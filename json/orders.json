@@ -1,0 +1,19 @@
+{
+    "orders": [
+        {
+            "cost": "$50.00",
+            "restaurant-name": "Pizza Hut",
+            "date": "Feb. 18th, 2021"
+        },
+        {
+            "cost": "$60.00",
+            "restaurant-name": "The Taco Stand",
+            "date": "Feb. 19th, 2021"
+        },
+        {
+            "cost": "$70.00",
+            "restaurant-name": "California Kitchen",
+            "date": "Feb. 19th, 2021"
+        }
+    ]
+}
