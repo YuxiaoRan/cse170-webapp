@@ -12,6 +12,7 @@ var order = require('./routes/order');
 var orderHistory = require('./routes/orderHistory');
 var liveKitchen = require('./routes/liveKitchen');
 var sharingBoard = require('./routes/sharingBoard');
+var user = require('./routes/user');
 
 var app = express();
 
@@ -43,6 +44,7 @@ app.get('/order', order.view);
 app.get('/orderHistory', orderHistory.view);
 app.get('/liveKitchen', liveKitchen.view);
 app.get('/sharingBoard', sharingBoard.view);
+app.get('/user', user.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

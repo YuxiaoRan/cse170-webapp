@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<title>Order History</title>
+	<title>My Account</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -16,24 +16,17 @@
 </head>
 
 <body>
+
     <div class="nav-bar">
         <a class="btn back-btn" href="/">Back</a>
-        <a class="btn nav-bar-btn" href="/user">My Account</a>
     </div>
 
     <div class="container">
-        {{#each orders}}
-        <div class="order" id="order1">
-            <div class="order-item">
-                <div class="details">
-                    <button class="btn order-detail-btn">>></button>
-                </div>
-                <div class="cost">{{cost}}</div>
-                <div class="restaurant-name">{{restaurant-name}}</div>
-                <div class="date">{{date}}</div>
-            </div>
+        <div class="board-containder">
+            <div class="username">{{username}}</div>
+            <div class="userbalance">{{balance}}</div>
+            <div class="userbio">{{bio}}</div>
         </div>
-        {{/each}}
     </div>
 
 </body>

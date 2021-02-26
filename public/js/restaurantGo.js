@@ -10,4 +10,15 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+	$('.like-btn').click(likeHandler);
+}
+
+function likeHandler(e) {
+	e.preventDefault();
+	var likeBtn = $('.like-btn');
+	if(likeBtn.text() == "Like!") {
+		likeBtn.text("Liked!");
+	} else {
+		likeBtn.text("Like!");
+	}
 }
