@@ -18,15 +18,19 @@
 <body>
 
     <div class="nav-bar">
-        <a class="btn back-btn" href="/">Back</a>
+        <a class="btn back-btn" href="/">Home</a>
     </div>
 
-    <div class="container">
-        <div class="board-containder">
+    <div class="container" id="user-container">
+        <div class="board-container">
             <div class="username">{{username}}</div>
             <div class="userbalance">{{balance}}</div>
             <div class="userbio">{{bio}}</div>
         </div>
+
+        <button class="btn user-btn deposit-btn" id="deposit-node">Deposit</button>
+        <button class="btn user-btn bio-btn" id="bio-node">Change Mood</button>
+        <a class="btn user-btn logout-btn" href="/index">Log Out</a>
     </div>
 
 </body>

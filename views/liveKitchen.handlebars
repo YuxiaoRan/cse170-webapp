@@ -18,18 +18,39 @@
 <body>
 
     <div class="nav-bar">
-        <a class="btn back-btn" href="/">Back</a>
+        <a class="btn back-btn" href="/">Home</a>
         <a class="btn nav-bar-btn" href="/user">My Account</a>
     </div>
 
     <div class="container">
-        <image class="livestream" src="../images/liveKitchenPlay.png">
-        </image>
+        {{!-- <image class="livestream" src="../images/liveKitchenPlay.png">
+        </image> --}}
+
+        <div id="ytplayer"></div>
+
+        <script>
+        // Load the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // Replace the 'ytplayer' element with an <iframe> and
+        // YouTube player after the API code downloads.
+        var player;
+        function onYouTubePlayerAPIReady() {
+            player = new YT.Player('ytplayer', {
+            height: '360',
+            width: '640',
+            videoId: 'ZJy1ajvMU1k'
+            });
+        }
+        </script>
 
         {{!-- TODO --}}
-        <div class="home-screen-elem">
+        {{!-- <div class="home-screen-elem">
             <button class="btn float-right-btn long-btn">Full Screen</button>
-        </div>
+        </div> --}}
         <div class="home-screen-elem">
             <button class="btn home-screen-btn long-btn like-btn">Like!</button>
         </div>

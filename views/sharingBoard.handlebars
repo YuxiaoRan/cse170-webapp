@@ -18,7 +18,7 @@
 <body>
 
     <div class="nav-bar">
-        <a class="btn back-btn" href="/">Back</a>
+        <a class="btn back-btn" href="/">Home</a>
         <a class="btn nav-bar-btn" href="/user">My Account</a>
     </div>
 
@@ -28,10 +28,16 @@
             <div class="board-restaurant-name">{{restaurant-name}}</div>
             <div class="username">{{user}}</div>
             <div class="comment">{{comment}}</div>
-            <image class="board-image" src="../images/liveKitchenPlay.png"></image>
+            <image class="board-image" src={{src}}></image>
             <hr></hr>
         </div>
         {{/each}}
+
+        <div class="row">
+
+        <div class="home-screen-elem">
+            <a class="btn home-screen-btn long-btn" type="submit" id="share-node">Share</a>
+        </div>
     </div>
 
 </body>

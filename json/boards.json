@@ -3,17 +3,20 @@
         {
             "user": "Sean Ran",
             "restaurant-name": "Pizza Hut",
-            "comment": "I like this restaurant!"
+            "comment": "I like this restaurant!",
+            "src": "../images/pizza.jpg"
         },
         {
             "user": "Jessica Gazca",
             "restaurant-name": "The Taco Stand",
-            "comment": "I like this restaurant!"
+            "comment": "I like this restaurant!",
+            "src": "../images/taco.jpg"
         },
         {
             "user": "Roseanne Park",
-            "restaurant-name": "Pizza Hut",
-            "comment": "I like this restaurant!"
+            "restaurant-name": "California Kitchen",
+            "comment": "I like this restaurant!",
+            "src": "../images/burgur.jpg"
         }
     ]
 }
