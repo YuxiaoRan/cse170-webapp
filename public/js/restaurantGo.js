@@ -13,6 +13,7 @@ function initializePage() {
 	$('.like-btn').click(likeHandler);
 	$('.deposit-btn').click(depositHandler);
 	$('.bio-btn').click(bioHandler);
+	$('.logout-btn').click(logoutHandler);
 	// $('#share-node').click(function(e) {
 	// });
 }
@@ -21,7 +22,7 @@ function likeHandler(e) {
 	e.preventDefault();
 	var likeBtn = $('.like-btn');
 	if(likeBtn.text() == "Like!") {
-		likeBtn.text("Liked!");
+		likeBtn.text("Liked!" + String.fromCodePoint(128512));
 	} else {
 		likeBtn.text("Like!");
 	}
@@ -72,5 +73,11 @@ var moodId = 0;
 function bioHandler(e) {
 	var moods = ["Yummy yummy", "Happy", "Eating", "Drinking", "Broken", "Slackin\'"];
 	e.preventDefault();
-	$('.userbio').text(moods[++moodId % 6]);
+	$('.userbio').text(moods[++moodId % moods.length]);
 }
+
+function logoutHandler(e) {
+	e.preventDefault();
+	window.location.reload(true);
+}
+

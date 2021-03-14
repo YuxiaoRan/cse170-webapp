@@ -13,6 +13,8 @@
   	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/restaurantGo.js"></script>
+    {{> facebook}}
+	<script src="/js/facebook.js"></script>
 </head>
 
 <body>
@@ -22,10 +24,19 @@
     </div>
 
     <div class="container" id="user-container">
+
         <div class="board-container">
-            <div class="username">{{username}}</div>
-            <div class="userbalance">{{balance}}</div>
-            <div class="userbio">{{bio}}</div>
+            <img class="facebookphoto titletext" id="photo" src="/images/default-avatar.jpg"></img>
+            <div class="useraccount">
+                <p class="facebookLogin titletext">
+                    Please login through Facebook
+                    <fb:login-button class="fblogin" scope="public_profile,email" onlogin="checkLoginState();">
+                    </fb:login-button>
+                </p>
+            </div>
+            <div class="username" id="name">Default User</div>
+            <div class="userbalance titletext">{{balance}}</div>
+            <div class="userbio titletext">{{bio}}</div>
         </div>
 
         <button class="btn user-btn deposit-btn" id="deposit-node">Deposit</button>

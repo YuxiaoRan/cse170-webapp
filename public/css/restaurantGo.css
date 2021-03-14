@@ -137,3 +137,25 @@
     max-height: 100%;
     max-width: 100%;
 }
+
+#photo {
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    margin-bottom: 10px;;
+}
+
+body {
+    background-image: url('../images/bg.png');
+}
+
+.title {
+    background: url('../images/logo.png') rgba(45, 88, 35, 0.7);;
+    max-width: 100%;
+}
+
+.titletext {
+    text-align: center;
+    color: honeydew;
+}
